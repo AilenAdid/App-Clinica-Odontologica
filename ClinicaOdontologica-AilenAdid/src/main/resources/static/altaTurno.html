@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Clinica Odontologica</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/postTurno.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/"></a>
+        </li>
+    </ul>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+
+            <a class="nav-link" href="/index.html/">Volver al menú principal</a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link" href="/turnoList.html">Modificar o eliminar Turno</a>
+
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+
+            <h3>Agregar Turno</h3>
+            <form id="add_new_turno">
+                <div class="form-group">
+                    <label class="control-label" for="fecha">Fecha:</label>
+                    <input type="text" class="form-control" id="fecha"
+                           placeholder="yyyy-mm-dd"
+                           name="fecha" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="hora">Hora:</label>
+                    <input type="text" class="form-control" id="hora"
+                           placeholder="hh:mm:ss"
+                           name="hora" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="odontologo">Odontologo:</label>
+                    <input type="text" class="form-control" id="odontologo"
+                           placeholder="Ingrese identificador del odontologo"
+                           name="odontologo" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="paciente">Paciente:</label>
+                    <input type="text" class="form-control" id="paciente"
+                           placeholder="Ingrese identificador del paciente"
+                           name="paciente" required></input>
+                </div>
+
+
+                <button type="submit" class="btn btn-danger"
+                        id="btn-add-new-turno">Guardar</button>
+            </form>
+            <div id="response" style="display:none; margin-top:10px"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

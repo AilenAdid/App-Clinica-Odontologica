@@ -1,0 +1,3 @@
+create table IF NOT EXISTS PACIENTE(ID int auto_increment primary key,NOMBRE varchar(255),APELLIDO varchar (255),EMAIL varchar (255),DNI varchar (255),FECHA_INGRESO TIMESTAMP WITHOUT TIME ZONE,domicilio_id int);
+create table IF NOT EXISTS ODONTOLOGO(ID int auto_increment primary key,NOMBRE VARCHAR(255),APELLIDO VARCHAR(255),MATRICULA VARCHAR(255));
+create table IF NOT EXISTS DOMICILIO(ID int auto_increment primary key,CALLE VARCHAR(255),NUMERO VARCHAR(255),LOCALIDAD VARCHAR(255),PROVINCIA VARCHAR(255));

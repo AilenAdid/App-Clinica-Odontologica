@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Clinica Odontologica</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/postPaciente.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/"></a>
+        </li>
+    </ul>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+
+            <a class="nav-link" href="/index.html/">Volver al menú principal</a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link" href="/pacienteList.html">Modificar o eliminar Paciente</a>
+
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+
+            <h3>Agregar Paciente</h3>
+            <form id="add_new_paciente">
+                <div class="form-group">
+                    <label class="control-label" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre"
+                           placeholder="Ingrese nombre"
+                           name="nombre" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido"
+                           placeholder="Ingrese apellido"
+                           name="apellido" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="dni">DNI:</label>
+                    <input type="text" class="form-control" id="dni"
+                           placeholder="Ingrese su documento"
+                           name="dni" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="dni">Email:</label>
+                    <input type="text" class="form-control" id="email"
+                           placeholder="Ingrese su email"
+                           name="email" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="fecha_ingreso">Fecha Alta:</label>
+                    <input type="text" class="form-control" id="fecha_ingreso"
+                           placeholder="yyyy-mm-dd"
+                           name="fecha_ingreso" required></input>
+                </div>
+                <div>DOMICILIO</div>
+                <div class="form-group">
+                    <label class="control-label" for="domicilio_calle">Calle:</label>
+                    <input type="text" class="form-control" id="domicilio_calle"
+                           placeholder="Ingrese calle"
+                           name="domicilio_calle" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="domicilio_numero">Número:</label>
+                    <input type="text" class="form-control" id="domicilio_numero"
+                           placeholder="Ingrese número"
+                           name="domicilio_numero" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="domicilio_localidad">Localidad:</label>
+                    <input type="text" class="form-control" id="domicilio_localidad"
+                           placeholder="Ingrese localidad"
+                           name="domicilio_localidad" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="domicilio_provincia">Provincia:</label>
+                    <input type="text" class="form-control" id="domicilio_provincia"
+                           placeholder="Ingrese provincia"
+                           name="domicilio_provincia" required></input>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-danger"
+                        id="btn-add-new-paciente">Guardar</button>
+            </form>
+            <div id="response" style="display:none; margin-top:10px"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
